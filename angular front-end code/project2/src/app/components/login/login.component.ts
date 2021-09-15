@@ -17,11 +17,13 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.service.getUsers().subscribe(data => {
       this.users = data;
-    })
+    }, error => {
+      console.log(error);
+    });
   }
 
   loginUser(data: any){
-    for(let i=0; i <= this.users.length; i++){
+    for(let i=0; i <= this.users.length-1; i++){
       if(this.users[i].username === data.username && this.users[i].password === data.password){
         alert('Login Successful!');
         localStorage.setItem('credentials', data.username + "," + data.password);

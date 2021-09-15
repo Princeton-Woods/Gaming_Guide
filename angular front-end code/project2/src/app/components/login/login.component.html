@@ -1,7 +1,7 @@
-<div class="container px-4 py-5 mx-auto">
-    <div class="card card0">
+<!-- <div class="container px-4 py-5 mx-auto shadow-lg my-5 p-5 bg-success">
+    <div class="card card0 bg-success">
         <div class="d-flex flex-lg-row flex-column-reverse">
-            <div class="card card1">
+            <div class="card card1 bg-success">
                 <div class="row justify-content-center my-auto">
                     <div class="col-md-8 col-10 my-5">
                         <h3 class="mb-5 text-center heading"></h3>
@@ -35,4 +35,24 @@
             </div>
         </div>
     </div>
+</div> -->
+
+<div class="container shadow-lg w-25 p-5 bg-success border border-2 border-dark rounded-3 position-absolute top-50 start-50 translate-middle">
+    <h2>Login</h2>
+    <br>
+    <form #form="ngForm" (submit)="loginUser(form.value)">
+        <div class="form-group"> 
+            <label class="form-control-label text-dark">Username</label> 
+            <input type="text" name="username" placeholder="Username" class="form-control" #username="ngModel" ngModel> 
+        </div>
+        <br>
+        <div class="form-group"> 
+            <label class="form-control-label text-dark">Password</label> 
+            <input type="password" name="password" placeholder="Password" class="form-control" #password="ngModel" ngModel> 
+        </div>
+        <br>
+        <div class="row justify-content-center my-3 px-3"> 
+            <input type="submit" class="btn btn-primary" value="Login"/> 
+        </div>
+    </form>
 </div>

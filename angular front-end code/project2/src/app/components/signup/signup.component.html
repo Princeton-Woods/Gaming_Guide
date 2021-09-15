@@ -1,19 +1,24 @@
-<div class="container">
+<div class="container shadow-lg w-25 p-5 bg-success border border-2 border-dark rounded-3 position-absolute top-50 start-50 translate-middle">
+    <h2>Sign Up</h2>
+    <br>
     <form #form="ngForm" (submit)="signUpUser()">
         <div class="form-group"> 
-            <label class="form-control-label text-muted">Username</label> 
+            <label class="form-control-label">Username</label> 
             <input type="text" #username name="username" placeholder="Username" class="form-control" [(ngModel)]="user.username"> 
         </div>
+        <br>
         <div class="form-group"> 
-            <label class="form-control-label text-muted">Password</label> 
-            <input type="password" #psw name="password" placeholder="Password" class="form-control" [(ngModel)]="user.password"> 
+            <label class="form-control-label">Password</label> 
+            <input type="password" #password name="password" placeholder="Password" class="form-control" [(ngModel)]="user.password"> 
         </div>
+        <br>
         <div class="form-group"> 
-            <label class="form-control-label text-muted">Email</label> 
+            <label class="form-control-label">Email</label> 
             <input type="text" #email name="email" placeholder="Email" class="form-control" [(ngModel)]="user.emailAddress"> 
         </div>
+        <br>
         <div class="row justify-content-center my-3 px-3"> 
-            <input type="submit" class="btn-block btn-color" value="Sign Up"/> 
+            <input type="submit" class="btn btn-primary" value="Sign Up"/> 
         </div>
     </form>
 </div>
