@@ -20,7 +20,7 @@ public class DataController {
         return provider.saveUser(user);
     }
 
-    @GetMapping("/login")
+    @GetMapping
     public List<User> fetchUsers() {
         return provider.getAllUsers();
     }

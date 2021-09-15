@@ -8,7 +8,7 @@ import { User } from '../models/user.model';
 })
 export class DataService {
 
-  public URL = 'http://localhost:8080/user'
+  public URL = 'http://localhost:8080'
 
   constructor(private http: HttpClient){}
 
