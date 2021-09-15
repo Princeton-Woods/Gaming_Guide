@@ -7,27 +7,27 @@
                     <h3 class="mb-5 text-center heading">Mc guide FILLER TEXT</h3>
                     <h5 class="msg-info text-center">Please fill out the required fields</h5>
 
-                        <form #form="ngForm" (submit)="signUpUser()">
+                        <form #form="ngForm" (submit)="signUpUser(form.value)">
                             <div class="form-group">
                                 <label class="form-control-label text-muted">Username</label>
-                                <input type="text" #username name="username" placeholder="Username" class="form-control"
+                                <input id="inputbox" type="text" #username name="username" placeholder="Username" [class.is-invalid]="username.oninvalid"  class="form-control"
                                     [(ngModel)]="user.username">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-control-label text-muted">Password</label>
-                                <input type="password" #password name="password" placeholder="Password"
-                                    class="form-control" [(ngModel)]="user.password">
+                                <input id="inputbox" type="password" #password name="password" placeholder="Password"
+                                [class.is-invalid]="password.oninvalid" class="form-control" [(ngModel)]="user.password">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-control-label text-muted">Email</label>
-                                <input type="text" #email name="email" placeholder="Email" class="form-control"
+                                <input id="inputbox" type="text" #email name="email" placeholder="Email" [class.is-invalid]="email.oninvalid" class="form-control"
                                     [(ngModel)]="user.emailAddress">
                             </div>
                             
                             <div class="row justify-content-center my-3 px-3">
-                                <button class="btn-block btn-color" type="submit" value="Sign Up">Create Minecraft Guide Account</button>
+                                <button [disabled]="form.invalid" class="btn-block btn-color" input type="submit" value="Sign Up">Create Minecraft Guide Account</button>
                             </div>
                         </form>
                         <div class="bottom text-center mb-5">

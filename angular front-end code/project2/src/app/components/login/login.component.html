@@ -49,16 +49,16 @@
                         <form #form="ngForm" (submit)="loginUser(form.value)">
                             <div class="form-group">
                                 <label class="form-control-label text-muted">Username</label>
-                                <input type="text" name="username" placeholder="Username" class="form-control"
+                                <input id="inputbox" type="text" name="username" placeholder="Username" [class.is-invalid]="username.invalid" class="form-control"
                                     #username="ngModel" ngModel>
                             </div>
                             
                             <div class="form-group">
                                 <label class="form-control-label text-muted">Password</label>
-                                <input type="password" name="password" placeholder="Password" class="form-control"
+                                <input id="inputbox" type="password" name="password" placeholder="Password" [class.is-invalid]="password.invalid" class="form-control"
                                     #password="ngModel" ngModel>
                             </div>
-                            <div class="row justify-content-center my-3 px-3"> <button class="btn-block btn-color" type = "submit" value = "Login">Login to Mc guide FILLER</button> </div>
+                            <div class="row justify-content-center my-3 px-3"> <button [disabled]="form.invalid" class="btn-block btn-color" input type = "submit" value = "Login">Login to Mc guide FILLER</button> </div>
 
                             <!-- <div class="row justify-content-center my-3 px-3">
                                 <input type="submit" class="btn btn-primary" value="Login" />

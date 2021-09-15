@@ -4,6 +4,10 @@ body {
     /*background-repeat: repeat*/
 }
 
+#inputbox{
+    background-color: white;
+}
+
 grassTop{
     width: 100%;
     height:10%;
