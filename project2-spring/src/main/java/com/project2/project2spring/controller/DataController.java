@@ -1,13 +1,7 @@
 package com.project2.project2spring.controller;
 
-import com.project2.project2spring.entity.Enchantments;
-import com.project2.project2spring.entity.Mobs;
-import com.project2.project2spring.entity.Recipes;
-import com.project2.project2spring.entity.User;
-import com.project2.project2spring.service.EnchantmentsService;
-import com.project2.project2spring.service.MobsService;
-import com.project2.project2spring.service.RecipesService;
-import com.project2.project2spring.service.UserService;
+import com.project2.project2spring.entity.*;
+import com.project2.project2spring.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,7 +20,7 @@ public class DataController {
         return provider.saveUser(user);
     }
 
-    @GetMapping("/signup")
+    @GetMapping("/login")
     public List<User> fetchUsers() {
         return provider.getAllUsers();
     }
@@ -92,6 +86,27 @@ public class DataController {
     @DeleteMapping("/enchantments/{enchantmentId}")
     public Enchantments deleteEnchantment(@PathVariable("enchantmentId") long enchantmentId){
         return enchantmentsService.deleteEnchantments(enchantmentId);
+    }
+
+
+
+    // WeaponsArmor Controller
+    @Autowired
+    private WeaponsArmorService weaponsArmorService;
+
+    @PostMapping("/weapons_armor")
+    public WeaponsArmor saveWeaponsArmor(@RequestBody WeaponsArmor weaponsArmor){
+        return weaponsArmorService.saveWeaponsArmor(weaponsArmor);
+    }
+
+    @GetMapping("/weapons_armor")
+    public List<WeaponsArmor> getMWeaponsArmor(){
+        return weaponsArmorService.getAllWeaponsArmor();
+    }
+
+    @DeleteMapping("/weapons_armor/{waId}")
+    public WeaponsArmor deleteWeaponsArmor(@PathVariable("waId") long waID){
+        return weaponsArmorService.deleteWeaponsArmor(waID);
     }
 
 }

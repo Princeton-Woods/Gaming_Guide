@@ -1,20 +1,14 @@
 package com.project2.project2spring.service;
 
-import com.project2.project2spring.entity.Enchantments;
-import com.project2.project2spring.entity.Mobs;
-import com.project2.project2spring.entity.Recipes;
-import com.project2.project2spring.entity.User;
-import com.project2.project2spring.repository.EnchantmentsRepository;
-import com.project2.project2spring.repository.MobsRepository;
-import com.project2.project2spring.repository.RecipesRepository;
-import com.project2.project2spring.repository.UserRepository;
+import com.project2.project2spring.entity.*;
+import com.project2.project2spring.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class DataImpl implements RecipesService, MobsService, EnchantmentsService, UserService {
+public class DataImpl implements RecipesService, MobsService, EnchantmentsService, UserService, WeaponsArmorService {
 
 
 
@@ -64,6 +58,29 @@ public class DataImpl implements RecipesService, MobsService, EnchantmentsServic
 
 
 
+    //WeaponsArmor Service
+    @Autowired
+    private WeaponsArmorRepository weaponsArmorRepository;
+
+    @Override
+    public WeaponsArmor saveWeaponsArmor(WeaponsArmor weaponsArmor) {
+        return weaponsArmorRepository.save(weaponsArmor);
+    }
+
+    @Override
+    public List<WeaponsArmor> getAllWeaponsArmor() {
+        return weaponsArmorRepository.findAll();
+    }
+
+    @Override
+    public WeaponsArmor deleteWeaponsArmor(Long waId) {
+        WeaponsArmor weaponsArmorDB = weaponsArmorRepository.findById(waId).get();
+        weaponsArmorRepository.delete(weaponsArmorDB);
+        return weaponsArmorDB;
+    }
+
+
+
     //Enchantments Service
     @Autowired
     private EnchantmentsRepository enchantmentsRepository;
@@ -84,7 +101,6 @@ public class DataImpl implements RecipesService, MobsService, EnchantmentsServic
         enchantmentsRepository.delete(enchantmentsDB);
         return enchantmentsDB;
     }
-
 
 
     //User Service
