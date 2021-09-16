@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Recipe } from 'src/app/models/recipe.model';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-crafting',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CraftingComponent implements OnInit {
 
-  constructor() { }
+  public recipes: Recipe[] = [];
+
+  constructor(private service: DataService) {}
 
   ngOnInit(): void {
+    this.service.getRecipes().subscribe(data => {
+      this.recipes = data;
+    }, error => {
+      console.log(error);
+    });
   }
-
 }

@@ -45,7 +45,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     padding: 16px;
     text-align: center;
-    background-image: url("Images/Birch.png");
+    background-image: url("src\assets\Images\Birch.png");
     background-repeat: repeat;
     width: 350px;
     height: 500px;
@@ -55,7 +55,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     padding: 16px;
     text-align: center;
-    background-image: url("Images/RedBrick.png");
+    background-image: url("src\assets\Images\RedBrick.png");
     background-repeat: repeat;
     width: 350px;
     height: 500px;
@@ -65,7 +65,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     padding: 16px;
     text-align: center;
-    background-image: url("Images/Deepslate.png");
+    background-image: url("src\assets\Images\Deepslate.png");
     background-repeat: repeat;
     width: 350px;
     height: 500px;

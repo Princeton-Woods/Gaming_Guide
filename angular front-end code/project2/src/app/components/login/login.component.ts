@@ -23,11 +23,15 @@ export class LoginComponent implements OnInit {
   }
 
   loginUser(data: any){
-    for(let i=0; i <= this.users.length-1; i++){
-      if(this.users[i].username === data.username && this.users[i].password === data.password){
-        alert('Login Successful!');
-        localStorage.setItem('credentials', data.username + "," + data.password);
-        this.router.navigate(['']);
+    if(data.username === null || data.password === null){
+      alert('Missing Fields...');
+    } else {
+      for(let i=0; i <= this.users.length-1; i++){
+        if(this.users[i].username === data.username && this.users[i].password === data.password){
+          alert('Login Successful!');
+          localStorage.setItem('credentials', JSON.stringify(data));
+          this.router.navigate(['']);
+        }
       }
     }
   }

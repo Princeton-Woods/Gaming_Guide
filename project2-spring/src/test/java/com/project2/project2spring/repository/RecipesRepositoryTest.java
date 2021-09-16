@@ -18,9 +18,9 @@ class RecipesRepositoryTest {
     @Test
     public void saveRecipes(){
         Recipes recipe = Recipes.builder()
-                .title("")
-                .url("")
-                .description("")
+                .title("Axes")
+                .url("assets/Images/Crafting/axes.gif")
+                .description("Axes GIF")
                 .build();
         repository.save(recipe);
     }

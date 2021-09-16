@@ -1,0 +1,55 @@
+body {
+    margin: 30px;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Site-background-light/revision/latest?cb=20210706133015");
+    background-repeat: repeat
+    /*background: linear-gradient(to right, #b92b27, #1565c0)*/
+}
+.dividerView{
+    width:5px;
+    height:2px;
+    display:inline-block;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    padding: 16px;
+    text-align: center;
+    background-image: url("src\assets\Images\GrassBlock.png");
+    width: 350px;
+    height: 275px;
+    /*background: linear-gradient(#765338,#64a43a);*/
+}
+
+
+/*Cards css */
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .column {
+    float: left;
+    width: 24.77%;
+    padding: 20px 10px;
+  }
+
+  .row {margin: 5 -5px;}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }

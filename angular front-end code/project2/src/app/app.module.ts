@@ -12,6 +12,7 @@ import { MainComponent } from './components/main/main.component';
 import { MobsComponent } from './components/mobs/mobs.component';
 import { PotionsComponent } from './components/potions/potions.component';
 import { CraftingComponent } from './components/crafting/crafting.component';
+import { ArmorComponent } from './components/armor/armor.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CraftingComponent } from './components/crafting/crafting.component';
     MainComponent,
     MobsComponent,
     PotionsComponent,
-    CraftingComponent
+    CraftingComponent,
+    ArmorComponent
   ],
   imports: [
     BrowserModule,
