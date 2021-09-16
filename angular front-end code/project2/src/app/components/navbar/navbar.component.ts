@@ -8,7 +8,7 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class NavbarComponent implements OnInit {
 
-  public isLoggedIn: boolean = true;
+  public isLoggedIn: boolean = false;
 
   constructor(public service: DataService) {}
 

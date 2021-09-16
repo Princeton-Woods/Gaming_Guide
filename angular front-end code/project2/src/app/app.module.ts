@@ -9,6 +9,9 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MainComponent } from './components/main/main.component';
+import { MobsComponent } from './components/mobs/mobs.component';
+import { PotionsComponent } from './components/potions/potions.component';
+import { CraftingComponent } from './components/crafting/crafting.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { MainComponent } from './components/main/main.component';
     LoginComponent,
     SignupComponent,
     NavbarComponent,
-    MainComponent
+    MainComponent,
+    MobsComponent,
+    PotionsComponent,
+    CraftingComponent
   ],
   imports: [
     BrowserModule,
