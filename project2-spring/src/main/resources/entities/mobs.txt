@@ -1,0 +1,135 @@
+name:Axolotl
+url:Axolotl.png
+desc:An axolotl is a passive aquatic mob that attacks most other underwater mobs.
+name:Bear
+url:Bear.png
+desc:Polar bears are neutral mobs that live in icy biomes.
+name:Bee
+url:Bee.png
+desc:Bees are flying neutral mobs that live in bee nests and beehives. If provoked, bees attack in a swarm to "sting" the player and inflict poison.
+name:Blaze
+url:Blaze.png
+desc:Blazes are floating hostile mobs found in nether fortresses, and are the only source of blaze rods.
+name:Brute
+url:Brute.png
+desc:A piglin brute is a hostile and stronger variant of piglins that appears in all types of bastion remnants. They always attack the player.
+name:Cat
+url:Cat.png
+desc:Cats are tameable passive mobs that are found in villages and swamp huts.
+name:Chicken
+url:Chicken.png
+desc:Chickens are common passive mobs found in most grassy biomes, and are the main source of chicken, feathers and eggs.
+name:Cow
+url:Cow.png
+desc:A cow is a common passive mob and a source of leather, beef and milk. Cows are found in most grassy biomes.
+name:Creeper
+url:Creeper.png
+desc:A creeper is a common hostile mob that silently approaches players and explodes
+name:Dolphin
+url:Dolphin.png
+desc:Dolphins are neutral mobs that live in non-frozen oceans, which grant a speed boost to players that swim near them.
+name:Drowned
+url:Drowned.png
+desc:Drowned are common underwater zombie variants that spawn in oceans and rivers, or when zombies drown. They are the only source of tridents.
+name:Enderman
+url:Enderman.png
+desc:An enderman is a neutral mob found in all three dimensions. Endermen can teleport and pick up blocks.
+name:Evoker
+url:Evoker.png
+desc:An evoker is a spell-casting illager found in woodland mansions and raids, and is the only source of the totem of undying.
+name:Fox
+url:Fox.png
+desc:Foxes are nocturnal passive mobs that spawn commonly in taiga, giant tree taiga, and snowy taiga biomes. A fox can carry a single item in its mouth.
+name:Ghast
+url:Ghast.png
+desc:Ghasts are large white floating ghost-like hostile mobs that live in the Nether which shoot explosive fireballs at the player.
+name:Goat
+url:Goat.png
+desc:A goat is a neutral mob found in mountains biomes. Goats perform high jumps and are a source of milk and goat horns.
+name:Iron Golem
+url:Golem.png
+desc:An iron golem is a large strong neutral utility mob that defends players and villagers. It is one of the few mobs that can be built then spawned in the game.
+name:Hoglin
+url:Hoglin.png
+desc:A hoglin is a breedable hostile mob found in the Nether, and are a source of porkchops and leather.
+name:Horse
+url:Horse.png
+desc:Horses are passive mobs that can be ridden when tamed.
+name:Llama
+url:Llama.png
+desc:Llamas are neutral mobs found in the mountains, savanna plateau, and savanna biomes that can be tamed and used to transport large shipments of items.
+name:Magma Cube
+url:Magma.png
+desc:A magma cube is a hostile mob found in the Nether. A magma cube behaves like a slime, but is stronger and more dangerous.
+name:Panda
+url:Panda.png
+desc:A panda is a rare neutral mob that resides in jungles. Certain aspects of a panda's behavior and appearance vary depending on its personality.
+name:Parrot
+url:Parrot.png
+desc:Parrots are rare tameable mobs found in jungles. Parrots can imitate sounds of nearby hostile mobs and can perch on the player's shoulders.
+name:Phantom
+url:Phantom.png
+desc:Phantoms are flying undead hostile mobs that spawn when the player has not slept or died for three or more in-game days.
+name:Pig
+url:Pig.png
+desc:A pig is a common passive mob found in most grassy biomes. Pigs are a source of porkchops and can be equipped with a saddle to be driven.
+name:Piglin
+url:Piglin.png
+desc:A piglin is a neutral mob found in the Nether. They attack players on sight unless the player is equipped with at least one piece of golden armor
+name:Pillager
+url:Pillager.png
+desc:Pillagers are illagers armed with crossbows that patrol the Overworld, guard their outposts, and participate in raids, sometimes spawning on ravagers in later waves of a raid
+name:Rabbit
+url:Rabbit.png
+desc:A rabbit is an uncommon passive mob and is a source of rabbit's foot, rabbit hide and raw rabbit.
+name:Ravager
+url:Ravager.png
+desc:Ravagers are large hostile mobs that spawn in raids and attack players, villagers, baby villagers, wandering traders, and iron golems.
+name:Sheep
+url:Sheep.png
+desc:Sheep are common passive mobs that supply wool and mutton and are found in many of the grassy biomes.
+name:Shulker
+url:Shulker.png
+desc:Shulkers are box-shaped hostile mobs found in end cities. They hide in their shell to blend in with surrounding purpur blocks and guard the city's various treasures.
+name:SilverFish
+url:Silver.png
+desc:Silverfish are small hostile mobs found hiding in stone-like blocks in mountains, strongholds, igloo basements and woodland mansions.
+name:Skeleton
+url:Skeleton.png
+desc:Skeletons are common undead hostile mobs equipped with bows.
+name:Slime
+url:Slime.png
+desc:Slimes are bouncy, cube-shaped hostile mobs that spawn deep underground in particular chunks, or at night in swamp biomes.
+name:Spider
+url:Spider.png
+desc:A spider is a common neutral mob that has the unique ability to climb walls.
+name:Squid
+url:Squid.png
+desc:Squid are common passive aquatic mobs that spawn in rivers and oceans.
+name:Strider
+url:Strider.png
+desc:Striders are passive mobs native to the Nether. They can walk/stride on lava and be saddled by the player.
+name:Turtle
+url:Turtle.png
+desc:A turtle is a common passive mob found in beach biomes.
+name:Villager
+url:Villager.png
+desc:Villagers are passive mobs that inhabit villages, work at their professions, breed, and interact. Their outfit varies according to their occupation and biome.
+name:Vindicator
+url:Vindicator.png
+desc:A vindicator is an illager equipped with an iron axe. Vindicators appear in woodland mansions and participate in raids, as well as pillager patrols
+name:Witch
+url:Witch.png
+desc:A witch is an uncommon hostile mob that uses harmful splash potions as ranged weapons and beneficial positive potions on itself.
+name:Wither_Skeleton
+url:Wither.png
+desc:Wither skeletons are tall variants of skeletons equipped with stone swords found in nether fortresses, which inflict the fatal Wither effect.
+name:Wolf
+url:Wolf.png
+desc:Wolves are neutral mobs that can be tamed.
+name:Zombie
+url:Zombie.png
+desc:Zombies are common undead hostile mobs that deal melee damage and attack in groups.
+name:Zombified Piglin
+url:Zpig.png
+desc:Zombified piglins are undead variants of piglins and piglin brutes that inhabit the Nether. A zombified piglin becomes hostile when it or another nearby zombified piglin is attacked.
