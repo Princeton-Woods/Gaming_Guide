@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class DataImpl implements RecipesService, MobsService, EnchantmentsService, UserService, WeaponsArmorService {
+public class DataImpl implements RecipesService, MobsService, EnchantmentsService, UserService, WeaponsArmorService, PotionsService {
 
 
 
@@ -115,5 +115,28 @@ public class DataImpl implements RecipesService, MobsService, EnchantmentsServic
     @Override
     public List<User> getAllUsers() {
         return userRepository.findAll();
+    }
+
+
+
+    //Potions Service
+    @Autowired
+    private PotionsRepository potionsRepository;
+
+    @Override
+    public Potions savePotions(Potions potions) {
+        return potionsRepository.save(potions);
+    }
+
+    @Override
+    public List<Potions> getAllPotions() {
+        return potionsRepository.findAll();
+    }
+
+    @Override
+    public Potions deletePotions(Long potionId) {
+        Potions potionsDB = potionsRepository.findById(potionId).get();
+        potionsRepository.delete(potionsDB);
+        return potionsDB;
     }
 }
