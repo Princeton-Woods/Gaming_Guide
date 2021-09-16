@@ -17,7 +17,6 @@ export class MainComponent implements OnInit {
     if(this.service.loggedIn()){
       this.router.navigate([page]);
     } else {
-      alert('Please login first :)');
       this.router.navigate(['login']);
     }
   }

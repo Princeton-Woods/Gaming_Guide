@@ -7,23 +7,26 @@
                     <h3 class="mb-5 text-center heading">Mc guide FILLER TEXT</h3>
                     <h5 class="msg-info text-center">Please fill out the required fields</h5>
 
-                        <form #form="ngForm" (submit)="signUpUser(form.value)">
+                        <form #form="ngForm" (submit)="signUpUser()">
                             <div class="form-group">
                                 <label class="form-control-label text-muted">Username</label>
-                                <input id="inputbox" type="text" #username name="username" placeholder="Username" [class.is-invalid]="username.oninvalid"  class="form-control"
-                                    [(ngModel)]="user.username">
+                                <input id="inputbox" type="text" #username="ngModel" name="username" placeholder="Username" [class.is-invalid]="username.invalid && username.touched"  
+                                class="form-control" [(ngModel)]="user.username" required>
+                                <p class="text-danger" [class.d-none]="username.untouched || username.valid">Please enter a username</p>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-control-label text-muted">Password</label>
-                                <input id="inputbox" type="password" #password name="password" placeholder="Password"
-                                [class.is-invalid]="password.oninvalid" class="form-control" [(ngModel)]="user.password">
+                                <input id="inputbox" type="password" #password="ngModel" name="password" placeholder="Password"
+                                [class.is-invalid]="password.invalid && password.touched" class="form-control" [(ngModel)]="user.password" required>
+                                <p class="text-danger" [class.d-none]="password.untouched || password.valid">Please enter a password</p>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-control-label text-muted">Email</label>
-                                <input id="inputbox" type="text" #email name="email" placeholder="Email" [class.is-invalid]="email.oninvalid" class="form-control"
-                                    [(ngModel)]="user.emailAddress">
+                                <input id="inputbox" type="text" #email="ngModel" name="email" placeholder="Email" [class.is-invalid]="email.invalid && email.touched" 
+                                class="form-control" [(ngModel)]="user.emailAddress" required>
+                                <p class="text-danger" [class.d-none]="email.untouched || email.valid">Please enter an email</p>
                             </div>
                             
                             <div class="row justify-content-center my-3 px-3">

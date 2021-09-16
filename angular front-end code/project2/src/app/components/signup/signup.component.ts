@@ -16,17 +16,13 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  signUpUser(data: any){
-    if(data.username !== null || data.password !== null || data.email !== null){
-      this.service.saveUser(this.user).subscribe(response => {
-        console.log(response);
-        alert('Sign Up Successful!');
-        this.router.navigate(['login']);
-      }, error => {
-        console.log(error);
-      });
-    } else {
-      alert('Missing Fields...');
-    }
+  signUpUser(){
+    this.service.saveUser(this.user).subscribe(response => {
+      console.log(response);
+      alert('Sign Up Successful!');
+      this.router.navigate(['login']);
+    }, error => {
+      console.log(error);
+    });
   }
 }
