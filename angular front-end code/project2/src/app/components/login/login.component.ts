@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
     for(let i=0; i <= this.users.length-1; i++){
       if(this.users[i].username === data.username && this.users[i].password === data.password){
         alert('Login Successful!');
-        localStorage.setItem('credentials', data.username + "," + data.password);
+        localStorage.setItem('credentials', JSON.stringify(data));
         this.router.navigate(['']);
       }
     }

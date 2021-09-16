@@ -20,7 +20,7 @@ public class DataController {
         return provider.saveUser(user);
     }
 
-    @GetMapping("/login")
+    @GetMapping
     public List<User> fetchUsers() {
         return provider.getAllUsers();
     }
@@ -100,13 +100,34 @@ public class DataController {
     }
 
     @GetMapping("/weapons_armor")
-    public List<WeaponsArmor> getMWeaponsArmor(){
+    public List<WeaponsArmor> getWeaponsArmor(){
         return weaponsArmorService.getAllWeaponsArmor();
     }
 
     @DeleteMapping("/weapons_armor/{waId}")
     public WeaponsArmor deleteWeaponsArmor(@PathVariable("waId") long waID){
         return weaponsArmorService.deleteWeaponsArmor(waID);
+    }
+
+
+
+    // Potions Controller
+    @Autowired
+    private PotionsService potionsService;
+
+    @PostMapping("/potions")
+    public Potions savePotions(@RequestBody Potions potions){
+        return potionsService.savePotions(potions);
+    }
+
+    @GetMapping("/potions")
+    public List<Potions> getPotions(){
+        return potionsService.getAllPotions();
+    }
+
+    @DeleteMapping("/potions/{potionId}")
+    public Potions deletePotions(@PathVariable("potionId") long potionId){
+        return potionsService.deletePotions(potionId);
     }
 
 }

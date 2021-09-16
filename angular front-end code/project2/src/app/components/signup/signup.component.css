@@ -4,6 +4,10 @@ body {
     /*background-repeat: repeat*/
 }
 
+#inputbox{
+    background-color: white;
+}
+
 .Sign{
     width: 50%;
     height: 50%;

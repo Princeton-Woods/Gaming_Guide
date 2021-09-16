@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from 'src/app/services/data.service';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,18 +9,17 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class NavbarComponent implements OnInit {
 
-  public isLoggedIn: boolean = true;
+  public isLoggedIn: boolean;
 
-  constructor(public service: DataService) {}
-
-  ngOnInit(): void {
+  constructor(public service: AuthService, private router: Router) {
     this.isLoggedIn = this.service.loggedIn();
   }
 
+  ngOnInit(): void {}
+
   logout(){
     this.service.logout();
-    if(this.isLoggedIn){
-      this.isLoggedIn = false;
-    }
+    this.isLoggedIn = false;
+    // this.router.navigate(['login']);
   }
 }

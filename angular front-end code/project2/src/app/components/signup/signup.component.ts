@@ -17,7 +17,7 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {}
 
   signUpUser(){
-    this.service.saveUser(this.user).subscribe((response) => {
+    this.service.saveUser(this.user).subscribe(response => {
       console.log(response);
       alert('Sign Up Successful!');
       this.router.navigate(['login']);

@@ -4,10 +4,14 @@ body {
     /*background-repeat: repeat*/
 }
 
+#inputbox{
+    background-color: white;
+}
+
 grassTop{
     width: 100%;
     height:10%;
-    background-image: url("Images/GrassBlock.png");
+    background-image: url("src\assets\Images\GrassBlock.png");
 
 }
 
@@ -54,12 +58,12 @@ button:focus {
 
 .card2 {
     width: 50%;
-    background-image: url("Images/Custom.png");    /*linear-gradient(0deg, #64a43a, #765338)*/
+    background-image: url("src\assets\Images\Custom.png");    /*linear-gradient(0deg, #64a43a, #765338)*/
 }
 
 #logo {
     width: 70px;
-    height: 60px
+    height: 60px;
 }
 
 .heading {
