@@ -13,8 +13,8 @@ import { MobsComponent } from './components/mobs/mobs.component';
 import { PotionsComponent } from './components/potions/potions.component';
 import { CraftingComponent } from './components/crafting/crafting.component';
 import { ArmorComponent } from './components/armor/armor.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { ForumComponent } from './forum/forum.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { ForumComponent } from './components/forum/forum.component';
 
 @NgModule({
   declarations: [
