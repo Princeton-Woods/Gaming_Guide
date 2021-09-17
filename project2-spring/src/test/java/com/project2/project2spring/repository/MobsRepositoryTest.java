@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -18,18 +19,20 @@ class MobsRepositoryTest {
     private MobsRepository repository;
 
     public String checkFile() throws IOException {
-        FileReader mobsFile = new FileReader("src/main/resources/entities/mobs.txt");
-        BufferedReader reader = new BufferedReader(mobsFile);
-        int count = 0;
-        String mobs = "";
-        try{
-            for(int i=0; i <= reader.readLine().length()-1; i++) {
-                if(reader.readLine() == null){ count++; }
-                mobs += reader.readLine();
+
+        BufferedReader br = new BufferedReader(new FileReader("src/main/resources/entities/mobs.txt"));
+        try {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+
+            while (line != null) {
+                sb.append(line);
+                line = br.readLine();
             }
-        } catch(NullPointerException e) {}
-        System.out.println(mobs);
-        return mobs;
+            return sb.toString();
+        } finally {
+            br.close();
+        }
     }
 
     @Test
