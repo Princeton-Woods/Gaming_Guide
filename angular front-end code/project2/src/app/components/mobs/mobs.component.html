@@ -1,19 +1,20 @@
-<body class="bodyInfo">
+<body class="container">
     <div class="tab">
-        <button class="tablinks" onclick="openCat(event, 'Passive')">Passive</button>
-        <button class="tablinks" onclick="openCat(event, 'Hostile')">Hostile</button>
-        <button class="tablinks" onclick="openCat(event, 'Neutral')">Neutral</button>
+        <button class="tablinks" (click)="openCat('All')">All</button>
+        <button class="tablinks" (click)="openCat('Passive')">Passive</button>
+        <button class="tablinks" (click)="openCat('Hostile')">Hostile</button>
+        <button class="tablinks" (click)="openCat('Neutral')">Neutral</button>
       </div>
 
-      <div id="Passive" class="tabcontent">
-        <div class="column">
+      <div class="row row-cols-4 tabcontent">
+        <div class="col column" *ngFor="let mob of mobs;">
             <div class="cardPass">
-                <h3>INSERT MOB NAME</h3>
-                <img src="assets/Images/Mobs/Cow.png" alt="Sword Gif" class = "imageSizing">
-                <p> INSERT FLAVOR TEXT</p>
+                <h3>{{ mob.name }}</h3>
+                <img src="{{ mob.url }}" alt="Sword Gif" class="imageSizing">
+                <p>{{ mob.description }}</p>
             </div>
         </div>
-        <div class="column">
+        <!-- <div class="column">
             <div class="cardPass">
                 <h3>INSERT MOB NAME</h3>
                 <img src="assets/Images/Mobs/Chicken.png" alt="Sword Gif" class = "imageSizing">
@@ -319,8 +320,8 @@
                 <img src="assets/Images/Mobs/Wolf.png" alt="Sword Gif" class = "imageSizing">
                 <p> INSERT FLAVOR TEXT</p>
             </div>
-        </div>
+        </div> -->
       </div>
 
-</body>
+    </body>
 

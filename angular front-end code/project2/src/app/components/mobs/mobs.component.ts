@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Mob } from 'src/app/models/mob.model';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-mobs',
@@ -7,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MobsComponent implements OnInit {
 
-  constructor() { }
+  public mobs: Mob[] = [];
+
+  constructor(private service: DataService) {}
 
   ngOnInit(): void {
+    this.service.getMobs().subscribe(data => {
+      this.mobs = data;
+    }, error => {
+      console.log(error);
+    });
+  }
+
+  openCat(choice: string){
+    switch(choice){
+      case "Passive":
+        // this.enemies = choice; 
+        break;
+      case "Hostile":
+        // this.enemy = choice;
+        break;
+      case "Neutral":
+        // this.enemy = choice;
+        break;
+      default: 
+        break;
+    }
   }
   // function openCat(evt, mobName) {
   //   // Declare all variables
@@ -31,5 +56,4 @@ export class MobsComponent implements OnInit {
   //   document.getElementById(mobName).style.display = "block";
   //   evt.currentTarget.className += " active";
   // }
-
 }
