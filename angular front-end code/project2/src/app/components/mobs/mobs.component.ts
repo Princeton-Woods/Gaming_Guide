@@ -21,15 +21,15 @@ export class MobsComponent implements OnInit {
     });
   }
 
-  openCat(choice: string){
+  openCat(choice: number){
     switch(choice){
-      case "Passive":
+      case 1:
         // this.enemies = choice; 
         break;
-      case "Hostile":
+      case 2:
         // this.enemy = choice;
         break;
-      case "Neutral":
+      case 3:
         // this.enemy = choice;
         break;
       default: 
