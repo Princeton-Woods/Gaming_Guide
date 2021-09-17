@@ -34,7 +34,7 @@ class MobsRepositoryTest {
 
     @Test
     public void saveMobs() throws IOException {
-        String[] mobs = checkFile().split("1");
+        String[] mobs = checkFile().split("4");
         System.out.println("*********************************************************************************");
         String[] mobsDefined = new String[3];
         int count = 0;
