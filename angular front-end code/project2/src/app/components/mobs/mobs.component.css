@@ -25,26 +25,38 @@
   .tabcontent {
     /* display: none; */
     padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+    /* border: 1px solid #ccc; */
+    /* border-top: none; */
   }
   body {
-    margin: 30px;
+    /* margin: 30px;
     padding: 0;
-    font-family: sans-serif;
-    background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Site-background-light/revision/latest?cb=20210706133015");
+    font-family: sans-serif; */
+    background-image: url("src\assets\Images\Site-background-light.png");
     background-repeat: repeat
-    /*background: linear-gradient(to right, #b92b27, #1565c0)*/
+    /* background: linear-gradient(to right, #b92b27, #1565c0) */
 }
 .dividerView{
     width:5px;
     height:2px;
     display:inline-block;
 }
+.cardAll {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 16px;
+  font-weight: 600;
+  /* text-align: center; */
+  background-image: url("src\assets\Images\Stone.png");
+  background-repeat: repeat;
+  width: 350px;
+  height: 500px;
+  /*background: linear-gradient(#765338,#64a43a);*/
+}
 .cardPass {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     padding: 16px;
-    text-align: center;
+    font-weight: 600;
+    /* text-align: center; */
     background-image: url("src\assets\Images\Birch.png");
     background-repeat: repeat;
     width: 350px;
@@ -54,7 +66,8 @@
 .cardHos {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     padding: 16px;
-    text-align: center;
+    font-weight: 600;
+    /* text-align: center; */
     background-image: url("src\assets\Images\RedBrick.png");
     background-repeat: repeat;
     width: 350px;
@@ -64,7 +77,8 @@
 .cardNeut {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     padding: 16px;
-    text-align: center;
+    font-weight: 600;
+    /* text-align: center; */
     background-image: url("src\assets\Images\Deepslate.png");
     background-repeat: repeat;
     width: 350px;
@@ -80,9 +94,9 @@
     box-sizing: border-box;
   }
   
-  body {
+  /* body {
     font-family: Arial, Helvetica, sans-serif;
-  }
+  } */
   
   .column {
     float: left;
