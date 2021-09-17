@@ -22,4 +22,5 @@ public class Mobs {
     private String name;
     private String url;
     private String description;
+    private Integer status;
 }
