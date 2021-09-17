@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "New folder",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "..\\Gallery2\\src\\app\\image-gallery\\images"
+		}
+	],
+	"settings": {}
+}
