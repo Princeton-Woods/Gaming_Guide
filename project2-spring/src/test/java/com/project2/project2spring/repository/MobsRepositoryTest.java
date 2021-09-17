@@ -36,15 +36,16 @@ class MobsRepositoryTest {
     public void saveMobs() throws IOException {
         String[] mobs = checkFile().split("4");
         System.out.println("*********************************************************************************");
-        String[] mobsDefined = new String[3];
+        String[] mobsDefined = new String[4];
         int count = 0;
         for(int i=0; i <= mobs.length-1; i++){
             mobsDefined = mobs[i].split("/");
             Mobs mob = Mobs.builder()
-                .name(mobsDefined[0])
-                .url("assets/Images/Mobs/"+mobsDefined[1])
-                .description(mobsDefined[2])
-                .build();
+                    .name(mobsDefined[0])
+                    .url("assets/Images/Mobs/"+mobsDefined[1])
+                    .status(Integer.parseInt(mobsDefined[2]))
+                    .description(mobsDefined[3])
+                    .build();
             repository.save(mob);
             count++;
         }
@@ -54,6 +55,8 @@ class MobsRepositoryTest {
     @Test
     public void displayAllMobs(){
         List<Mobs> mobs = repository.findAll();
-        System.out.println(mobs);
+        for(int i=0; i <= mobs.size()-1; i++){
+            System.out.println(mobs.get(i));
+        }
     }
 }
