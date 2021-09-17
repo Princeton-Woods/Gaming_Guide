@@ -10,6 +10,8 @@ import { DataService } from 'src/app/services/data.service';
 export class MobsComponent implements OnInit {
 
   public mobs: Mob[] = [];
+  public mobsFiltered: Mob[] = [];
+  public classCSS: string = "";
 
   constructor(private service: DataService) {}
 
@@ -22,19 +24,28 @@ export class MobsComponent implements OnInit {
   }
 
   openCat(choice: number){
-    switch(choice){
-      case 1:
-        // this.enemies = choice; 
-        break;
-      case 2:
-        // this.enemy = choice;
-        break;
-      case 3:
-        // this.enemy = choice;
-        break;
-      default: 
-        break;
+    if(choice === 1){
+      this.classCSS = "cardHos";
+    } else if(choice === 2){
+      this.classCSS = "cardPass";
+    } else if(choice === 3){
+      this.classCSS = "cardNeut";
+    } else {
+      this.classCSS = "cardAll";
     }
+    this.mobsFiltered = [];
+    this.mobs.forEach(mob => { 
+      switch(choice){
+        case 0:
+          this.mobsFiltered.push(mob);
+          break;
+        default:
+          if(mob.status === choice){
+            this.mobsFiltered.push(mob);
+          }
+          break;
+      } 
+    });
   }
   // function openCat(evt, mobName) {
   //   // Declare all variables
