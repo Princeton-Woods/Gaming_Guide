@@ -2,7 +2,7 @@ body {
     margin: 30px;
     padding: 0;
     font-family: sans-serif;
-    background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Site-background-light/revision/latest?cb=20210706133015");
+    /* background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Site-background-light/revision/latest?cb=20210706133015"); */
     background-repeat: repeat
     /*background: linear-gradient(to right, #b92b27, #1565c0)*/
 }
@@ -15,7 +15,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     padding: 16px;
     text-align: center;
-    background-image: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/df/BlockCSS.png/revision/latest?cb=20210818130342&block-sprite&format=original);
+    /* background-image: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/df/BlockCSS.png/revision/latest?cb=20210818130342&block-sprite&format=original); */
     width: 350px;
     height: 275px;
     /*background: linear-gradient(#765338,#64a43a);*/
