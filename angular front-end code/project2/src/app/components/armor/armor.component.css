@@ -1,0 +1,72 @@
+body {
+    margin: 30px;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Site-background-light/revision/latest?cb=20210706133015");
+    background-repeat: repeat
+    /*background: linear-gradient(to right, #b92b27, #1565c0)*/
+}
+.white{
+  color:white;
+}
+.dividerView{
+    width:5px;
+    height:100px;
+    display:inline-block;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    padding: 30px 20px;
+    text-align: center;
+    background-image: url("Images/CopperC.png");
+    object-fit: cover;
+    width: 800px;
+    height: 400px;
+    /*background: linear-gradient(#765338,#64a43a);*/
+}
+.padding{
+  padding: 30px;
+}
+.imageSizing{
+    padding: 15px 25px;
+    width: 16%;
+    height: 100%;
+}
+
+/*Cards css */
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .column {
+    float: left;
+    width: 50.%;
+  }
+  .column2 {
+    float: left;
+    width: 35%;
+    padding: 20px 10px;
+  }
+
+  .row {margin: 5px 35px;}
+
+  .rowHelm {margin: 5px 0px;}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
