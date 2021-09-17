@@ -1,8 +1,94 @@
-<div style="background-image: url('images/171177.jpg');"></div>
 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forum</title>
+    <link href="C:\Users\jac00\Desktop\RevatureWork2\RevatureWork2\Crafting Page\css" rel="stylesheet" id="bootstrap-css">
+    <style>
+        body {
+    margin: 30px;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("assets/forum/171177.jpg");
+    background-repeat: repeat
+    /*background: linear-gradient(to right, #b92b27, #1565c0)*/
+}
+.dividerView{
+    width:5px;
+    height:2px;
+    display:inline-block;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    padding: 16px;
+    text-align: center;
+    background-image: url("assets/forum/533313.jpg");
+    height: 375px;
+        grid-row: 2/3;
+    grid-column: 2/3;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+   
+    
+
+    /*background: linear-gradient(#765338,#64a43a);*/
+}
+.card div{
+    grid-row: 2/3;
+  }
+  @media (max-width: 768px){
+    .card-holder{
+      grid-template-columns: 1fr 6fr 1fr;
+    }
+    .card{
+      padding: 20px;
+    }
+  }
+
+/*Cards css */
+*{
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  .column {
+    float: left;
+    width: 24.77%;
+    padding: 20px 10px;
+  }
+
+  .row {margin: 5 -5px;}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+    </style>
+    <div style="background-image: url('assets/forum/17177.jpg');"></div>
+    
+</head>
+=======
 <header class = "grassTop"></header>
 
 <h3 for="Username" style="color: aliceblue;">Username</h3>
+>>>>>>> 16e9d9a43fc24607affa2d0256f106b53a9952de
 
 <input type="text" id="name" name="name" minlength="4" maxlength="8" size="10" required>
 
