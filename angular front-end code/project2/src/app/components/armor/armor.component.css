@@ -19,7 +19,7 @@ color:black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
   padding: 10px 5px;
   text-align: center;
-  background-image: url("assets/Images/Emerald.png");
+  background-image: url("src\assets\Images\Emerald.png");
   object-fit: fill;
   width: 800px;
   height: 390px;

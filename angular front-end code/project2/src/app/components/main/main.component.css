@@ -9,3 +9,15 @@
     background-repeat: no-repeat;
     background-size: cover;
 } */
+.padding{
+    padding: 30px;
+  }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    padding: 16px;
+    text-align: center;
+    background-image: url("src\assets\Images\StoneBricks.jpg");
+    width: 400px;
+    height: 250px;
+    /*background: linear-gradient(#765338,#64a43a);*/
+}

@@ -2,7 +2,7 @@ body {
     margin: 30px;
     padding: 0;
     font-family: sans-serif;
-    background-image: url("src\app\components\forum\images\171177.jpg");
+    /*background-image: url("src\app\components\forum\images\171177.jpg");*/
     background-repeat: repeat
     /*background: linear-gradient(to right, #b92b27, #1565c0)*/
 }
@@ -15,7 +15,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     padding: 16px;
     text-align: center;
-    background-image: url("src\app\components\forum\images\533313.jpg");
+    /*background-image: url("src\app\components\forum\images\533313.jpg");*/
     height: 375px;
         grid-row: 2/3;
     grid-column: 2/3;
