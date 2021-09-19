@@ -20,7 +20,7 @@ export class SignupComponent implements OnInit {
     this.service.saveUser(this.user).subscribe(response => {
       console.log(response);
       alert('Sign Up Successful!');
-      this.router.navigate(['login']);
+      this.router.navigate(['']);
     }, error => {
       console.log(error);
     });
