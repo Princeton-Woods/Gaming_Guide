@@ -148,7 +148,7 @@ public class DataImpl implements RecipesService, MobsService, EnchantmentsServic
 
     @Override
     public Forum saveForum(Forum forum) {
-        return (Forum) forumRepository.save(forum);
+        return forumRepository.save(forum);
     }
 
     @Override
@@ -158,7 +158,7 @@ public class DataImpl implements RecipesService, MobsService, EnchantmentsServic
 
     @Override
     public Forum deleteForum(Long forumId) {
-        Forum forumDB = (Forum) forumRepository.findById(forumId).get();
+        Forum forumDB = forumRepository.findById(forumId).get();
         forumRepository.delete(forumDB);
         return forumDB;
     }
