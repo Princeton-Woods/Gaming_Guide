@@ -2,15 +2,35 @@
     background-image: url(https://img.gurugamer.com/resize/1200x-/2020/11/06/maxresdefault-2020-10-14t110048-427-a1ac.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 30px ,0px,0px,30px;
 }
+.white{
 
-/* #header{
-    background-image: url(https://assets.primagames.com/media/images/news/minecraft-dungeons-achievement-list.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+    color: white;
+    text-shadow:
+    -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0);  
+    
+  }
+
+  .white2{
+
+    color: white;
+    text-shadow:
+    -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0);  
+    font-size: xx-large;
+  }
+.planks{
+    background-image: url(src\assets\Images\Planks.png);
+    background-repeat:repeat;
+}
 .padding{
-    padding: 30px;
+    margin-left: 70px;
   }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
@@ -20,4 +40,9 @@
     width: 400px;
     height: 250px;
     /*background: linear-gradient(#765338,#64a43a);*/
+}
+.btn-primary:hover {
+    color: black;
+    background-color: #00b3db;
+    border-color: #285e8e; /*set the color you want here*/
 }
