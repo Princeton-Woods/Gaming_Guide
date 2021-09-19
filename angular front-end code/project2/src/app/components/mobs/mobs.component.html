@@ -1,13 +1,12 @@
-<br><br>
-<body class="container border border-2 border-success rounded-3 shadow-lg">
+<body class="body2">
     <div class="tab bg-secondary">
         <button class="tablinks" (click)="openCat(0)">All</button>
         <button class="tablinks" (click)="openCat(2)">Passive</button>
         <button class="tablinks" (click)="openCat(1)">Hostile</button>
         <button class="tablinks" (click)="openCat(3)">Neutral</button>
-      </div>
+    </div>
 
-      <div class="row row-cols-4 tabcontent">
+    <div class="row row-cols-4 tabcontent">
         <div class="col text-primary h3 column" *ngFor="let mob of mobsFiltered;">
             <div [class]="classCSS" class="p-5 text-center">
                 <h3>{{ mob.name }}</h3>
@@ -15,6 +14,8 @@
                 <p>{{ mob.description }}</p>
             </div>
         </div>
+    </div>
+</body>
         <!-- <div class="column">
             <div class="cardPass">
                 <h3>INSERT MOB NAME</h3>
@@ -322,7 +323,3 @@
                 <p> INSERT FLAVOR TEXT</p>
             </div>
         </div> -->
-      </div>
-
-    </body>
-

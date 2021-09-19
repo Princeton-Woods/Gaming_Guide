@@ -1,14 +1,20 @@
-body {
-
-    margin: 30px;
-    padding: 0;
-    font-family: sans-serif;
-    /* background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Site-background-light/revision/latest?cb=20210706133015"); */
-    background-repeat: repeat
-    /*background: linear-gradient(to right, #b92b27, #1565c0)*/
-}
 .white{
-color:black;
+
+  color: white;
+  text-shadow:
+  -1px -1px 0 rgb(0, 0, 0),
+  1px -1px 0 rgb(0, 0, 0),
+  -1px 1px 0 rgb(0, 0, 0),
+  1px 1px 0 rgb(0, 0, 0);  
+  font-size:17px;
+}
+.white2{
+  color: rgb(255, 255, 255);
+  text-shadow:
+  -1px -1px 0 rgb(54, 1, 1),
+  1px -1px 0 rgb(54, 1, 1),
+  -1px 1px 0 rgb(54, 1, 1),
+  1px 1px 0 rgb(54, 1, 1);  
 }
 .dividerView{
   width:5px;
@@ -17,7 +23,7 @@ color:black;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-  padding: 10px 5px;
+  padding: 10px 5px 0px,0px;
   text-align: center;
   background-image: url("src\assets\Images\Emerald.png");
   object-fit: fill;
@@ -31,7 +37,7 @@ padding: 30px;
 .imageSizing{
   margin-left: auto;
   margin-right: auto;
-    width: 11%;
+    width: 14%;
     height: 100%;
 }
 .helmetSizing{

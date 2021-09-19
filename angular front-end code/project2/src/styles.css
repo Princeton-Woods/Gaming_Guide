@@ -1,10 +1,13 @@
-body{
-    background-image: url(https://files.mclike.com/upload/ev/dmg2i4ldbox6jl2fiz1zrs1xnhdofgut8v4v42yuetp0zm8nyyble8cu2dekhv47.png?1605264036); 
+.body1{
+    background-image: url("https://files.mclike.com/upload/ev/dmg2i4ldbox6jl2fiz1zrs1xnhdofgut8v4v42yuetp0zm8nyyble8cu2dekhv47.png?1605264036"); 
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.bodyInfo{
-    /* background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Site-background-light/revision/latest?cb=20210706133015"); */
+.body2{
+
+    padding-left: 65px;
+    font-family: sans-serif;
+    background-image: url(src\assets\Images\StoneBg.png);
     background-repeat: repeat
 }

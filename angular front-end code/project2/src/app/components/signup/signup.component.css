@@ -1,8 +1,9 @@
-body {
+/* body {
     height: 100%;
-    background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Site-background-light/revision/latest?cb=20210706133015");/*linear-gradient(0deg,#765338,#64a43a);*/
-    /*background-repeat: repeat*/
-}
+    background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Site-background-light/revision/latest?cb=20210706133015");
+    /*linear-gradient(0deg,#765338,#64a43a);
+    
+} */
 
 #inputbox{
     background-color: white;
@@ -59,8 +60,8 @@ button:focus {
 
 
 #logo {
-    width: 70px;
-    height: 60px
+    width: 25%;
+    height: 25%;
 }
 
 .heading {

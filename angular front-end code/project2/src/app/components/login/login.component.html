@@ -1,3 +1,62 @@
+<body class="body1">
+    <div class="container px-4 py-5 mx-auto">
+        <div class="card card0 rounded-3 shadow-lg border border-2 border-success">
+            <div class="d-flex flex-lg-row flex-column-reverse">
+                <div class="card card1 bg-secondary">
+                    <div class="row justify-content-center my-auto">
+                        <div class="col-md-8 col-10 my-5">
+                            <div class="row justify-content-center px-3 mb-3"> <img id="logo"
+                                    src="assets\Images\MC.png"> </div>
+                            <h3 class="mb-5 text-center heading">Elite Craft Guides</h3>
+                            <h5 class="msg-info">Please login to your account</h5>
+                            <form #form="ngForm" (submit)="loginUser(form.value)">
+                                <div class="form-group">
+                                    <label class="form-control-label text-muted">Username</label>
+                                    <input id="inputbox" type="text" name="username" placeholder="Username"
+                                        [class.is-invalid]="username.invalid && username.touched" class="form-control"
+                                        #username="ngModel" ngModel required>
+                                    <p class="text-danger" [class.d-none]="username.untouched || username.valid">Please
+                                        enter a username</p>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label text-muted">Password</label>
+                                    <input id="inputbox" type="password" name="password" placeholder="Password"
+                                        [class.is-invalid]="password.invalid && password.touched" class="form-control"
+                                        #password="ngModel" ngModel required>
+                                    <p class="text-danger" [class.d-none]="password.untouched || password.valid">Please
+                                        enter a password</p>
+                                </div>
+                                <div class="row justify-content-center my-3 px-3">
+                                    <button [disabled]="form.invalid" class="btn-block btn-color" input type="submit"
+                                        value="Login">Login</button>
+                                </div>
+                                <div class="bottom text-center mb-5">
+                                    <p href="#" class="sm-text mx-auto mb-3">Don't have an account? <button
+                                            class="btn btn-white ml-2">Create account</button>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <div class="my-auto mx-md-5 px-md-5 right">
+                        <h3 class="text-white ">Elite Craft Guides for Minecraft</h3> 
+                        <small class="shadowBlack">Here at Elite Craft Guides our main goal is to provide usable and indepth guides for
+                            Minecraft players of all types whether experienced or not can benefit from using our guides. We tailor our 
+                            guides to provide detailed descriptions of Minecrafts most essential features with colorful diagrams. Not hhere
+                            foe the guides? Check out our gallery and forums. Show of your creative builds and art or join a discussion
+                            with fellow Elite Craft guide members around the world.
+
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
 <!-- <div class="container px-4 py-5 mx-auto shadow-lg my-5 p-5 bg-success">
     <div class="card card0 bg-success">
         <div class="d-flex flex-lg-row flex-column-reverse">
@@ -36,50 +95,3 @@
         </div>
     </div>
 </div> -->
-
-<div class="container px-4 py-5 mx-auto">
-    <div class="card card0 rounded-3 shadow-lg border border-2 border-success">
-        <div class="d-flex flex-lg-row flex-column-reverse">
-            <div class="card card1 bg-secondary">
-                <div class="row justify-content-center my-auto">
-                    <div class="col-md-8 col-10 my-5">
-                        <div class="row justify-content-center px-3 mb-3"> <img id="logo" src="assets\Images\MC.png"> </div>
-                        <h3 class="mb-5 text-center heading">Mc guide FILLER TEXT</h3>
-                        <h6 class="msg-info">Please login to your account</h6>
-                        <form #form="ngForm" (submit)="loginUser(form.value)">
-                            <div class="form-group">
-                                <label class="form-control-label text-muted">Username</label>
-                                <input id="inputbox" type="text" name="username" placeholder="username" [class.is-invalid]="username.invalid && username.touched" class="form-control" 
-                                #username="ngModel" ngModel required>
-                                <p class="text-danger" [class.d-none]="username.untouched || username.valid">Please enter a username</p>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="form-control-label text-muted">Password</label>
-                                <input id="inputbox" type="password" name="password" placeholder="Password" [class.is-invalid]="password.invalid && password.touched" 
-                                class="form-control" #password="ngModel" ngModel required>
-                                <p class="text-danger" [class.d-none]="password.untouched || password.valid">Please enter a password</p>
-                            </div>
-                            <div class="row justify-content-center my-3 px-3"> 
-                                <button [disabled]="form.invalid" class="btn-block btn-color" input type = "submit" value = "Login">Login to Mc guide FILLER</button> 
-                            </div>
-
-                            <!-- <div class="row justify-content-center my-3 px-3">
-                                <input type="submit" class="btn btn-primary" value="Login" />
-                            </div> -->
-
-                            <div class="bottom text-center mb-5">
-                                <p href="#" class="sm-text mx-auto mb-3">Don't have an account?<button class="btn btn-white ml-2">Create account</button></p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="card card2">
-                <div class="my-auto mx-md-5 px-md-5 right">
-                    <h3 class="text-white">Filler header 3</h3> <small class="text-white">filler description paragraph.</small>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>

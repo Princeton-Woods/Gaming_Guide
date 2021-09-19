@@ -1,18 +1,29 @@
-body {
+/*body {
     height: 80%;
-    background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Site-background-light/revision/latest?cb=20210706133015");/*linear-gradient(0deg,#765338,#64a43a);*/
-    /*background-repeat: repeat*/
+    background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Site-background-light/revision/latest?cb=20210706133015");
+    
+}*/
+.shadowBlack{
+    font-size: large;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0);  
+}
+
+.shadowWhite{
+    color: rgb(0, 0, 0);
+    text-shadow:
+    -1px -1px 0 rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+    1px 1px 0 rgb(255, 255, 255);  
 }
 
 #inputbox{
     background-color: white;
-}
-
-grassTop{
-    width: 100%;
-    height:10%;
-    background-image: url("src\assets\Images\GrassBlock.png");
-
 }
 
 input,
@@ -62,8 +73,8 @@ button:focus {
 }
 
 #logo {
-    width: 70px;
-    height: 60px;
+    width: 50%;
+    height: 50%;
 }
 
 .heading {

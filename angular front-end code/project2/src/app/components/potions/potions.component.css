@@ -1,20 +1,39 @@
-body {
+.body {
     margin: 30px;
     padding: 0;
     font-family: sans-serif;
-    /*background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b5/Site-background-light/revision/latest?cb=20210706133015"); */
+    background-image: url(src\assets\Images\StoneBg.png);
     background-repeat: repeat
     /*background: linear-gradient(to right, #b92b27, #1565c0)*/
 }
 .imageSizing{
-    padding: 20px,16px,20px,20px;
-    width: 325px;
-    height: 170px;
+    padding: 20px,16px,20px,16px;
+    width: 100%;
+    height: 30%;
 }
 .dividerView{
     width:5px;
     height:2px;
     display:inline-block;
+}
+.headColor{
+  color: white;
+  text-shadow:
+  -1px -1px 0 #054501,
+  1px -1px 0 #054501,
+  -1px 1px 0 #054501,
+  1px 1px 0 #054501;  
+}
+.TextOutline
+{   
+    padding-top: 10px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #054501,
+    1px -1px 0 #054501,
+    -1px 1px 0 #054501,
+    1px 1px 0 #054501;  
+    font-size: large;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
@@ -22,8 +41,11 @@ body {
     text-align: center;
     background-image: url("src\assets\Images\Cobble.png");
     width: 355px;
-    height: 350px;
+    height: 450px;
     /*background: linear-gradient(#765338,#64a43a);*/
+}
+.padding{
+  padding-bottom: 32px;
 }
 
 /*Cards css */

@@ -1,104 +1,98 @@
-<div class="container p-5">
-    <h3 id="header" class="container border border-2 border-dark text-center p-5 shadow-lg rounded-3 bg-success">
-        <u>MINECRAFT GAMER GUIDE</u></h3>
-    <h5 class="border border-2 border-dark p-5 shadow-lg rounded-3 bg-success">
-        <u>Description:</u>
-        <br>
-        <br>
-        <p>This Minecraft gamer guide is any Minecraft gamer’s ultimate tool!! We provide tips and tricks on
-            enchantments, weapons and armor stats, Mob info on enemies and animals to gain damage info, a picture
-            gallery of live in game experiences, and a forum to post any in-game inquiries to receive any tips.</p>
-    </h5>
-    <!-- <br> -->
-    <div class="row">
-        <!-- <div class="col w-25">
-            <aside class="border border-2 border-dark p-5">
-                <h4>Side Bar</h4>
-            </aside>
-        </div> -->
-        <div class="col">
-            <section id="details" class="text-center container border border-2 border-dark p-5 shadow-lg rounded-3">
-                <div class="row">
-                    <div class="col">
-                        <div class="card bg-success shadow-md">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Potions</h5>
-                                <p class="card-text">Tips and tricks on how to acquire and use enchantments such when to
-                                    execute the best combos and how to find the most effective enchantments.</p>
-                                <button (click)="checkUser('potions')" class="btn btn-primary">Potions</button>
+<body class="body1">
+    <div class="container p-5">
+        <h3 id="header" class="container border border-2 border-dark text-center p-5 shadow-lg rounded-3 bg-success">
+            <u>MINECRAFT GAMER GUIDE</u>
+        </h3>
+        <h5 class="border border-2 border-dark p-5 shadow-lg rounded-3 bg-success">
+            <u>Description:</u>
+            <p>This Minecraft gamer guide is any Minecraft gamer’s ultimate tool!! We provide tips and tricks on
+                enchantments, weapons and armor stats, Mob info on enemies and animals to gain damage info, a picture
+                gallery of live in game experiences, and a forum to post any in-game inquiries to receive any tips.</p>
+        </h5>
+        <div class="row">
+            <div class="col">
+                <section id="details" class="text-center container border border-2 border-dark p-5 shadow-lg rounded-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card bg-success shadow-md">
+                                <img src="" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Potions</h5>
+                                    <p class="card-text">Tips and tricks on how to acquire and use enchantments such
+                                        when to
+                                        execute the best combos and how to find the most effective enchantments.</p>
+                                    <button (click)="checkUser('potions')" class="btn btn-primary">Potions</button>
+                                </div>
                             </div>
                         </div>
-                        <!-- <input type="submit" class="btn btn-block bg-primary" value="Enhancements"/>  -->
-                    </div>
-                    <div class="col">
-                        <div class="card bg-success shadow-md">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Crafting Recipes</h5>
-                                <p class="card-text">A list of different types of crafting recipes ranging from building
-                                    blocks, food stuffs, and redstone.</p>
-                                <button (click)="checkUser('recipes')" class="btn btn-primary">Crafting Recipes</button>
+                        <div class="col">
+                            <div class="card bg-success shadow-md">
+                                <img src="" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Crafting Recipes</h5>
+                                    <p class="card-text">A list of different types of crafting recipes ranging from
+                                        building
+                                        blocks, food stuffs, and redstone.</p>
+                                    <button (click)="checkUser('recipes')" class="btn btn-primary">Crafting
+                                        Recipes</button>
+                                </div>
                             </div>
                         </div>
-                        <!-- <input type="submit" class="btn btn-block bg-primary" value="Crafting Recipes"/>  -->
                     </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col">
-                        <div class="card bg-success shadow-md">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Mob Info</h5>
-                                <p class="card-text">The glossary of many different enemies and animals you may
-                                    encounter in the game along with their damage and health info.</p>
-                                <button (click)="checkUser('mobs')" class="btn btn-primary">Mob Info</button>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card bg-success shadow-md">
+                                <img src="" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mob Info</h5>
+                                    <p class="card-text">The glossary of many different enemies and animals you may
+                                        encounter in the game along with their damage and health info.</p>
+                                    <button (click)="checkUser('mobs')" class="btn btn-primary">Mob Info</button>
+                                </div>
                             </div>
                         </div>
-                        <!-- <input type="submit" class="btn btn-block bg-primary" value="Mob Info"/>                   -->
-                    </div>
-                    <div class="col">
-                        <div class="card bg-success shadow-md">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Weapons/Armor + Stats</h5>
-                                <p class="card-text">A cornucopia of weapons and armor info to help a any player survive
-                                    Minecraft.</p>
-                                <button (click)="checkUser('weapons_armor')" class="btn btn-primary">Weapons/Armor +
-                                    Stats</button>
+                        <div class="col">
+                            <div class="card bg-success shadow-md">
+                                <img src="" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weapons/Armor + Stats</h5>
+                                    <p class="card-text">A cornucopia of weapons and armor info to help a any player
+                                        survive
+                                        Minecraft.</p>
+                                    <button (click)="checkUser('weapons_armor')" class="btn btn-primary">Weapons/Armor +
+                                        Stats</button>
+                                </div>
                             </div>
                         </div>
-                        <!-- <input type="submit" class="btn btn-block bg-primary" value="Weapons/Armor + Stats"/>                  -->
                     </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col">
-                        <div class="card bg-success shadow-md">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Gallery</h5>
-                                <p class="card-text">Live in-game pictures of certain events and quests.</p>
-                                <button (click)="checkUser('gallery')" class="btn btn-primary">Gallery</button>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card bg-success shadow-md">
+                                <img src="" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gallery</h5>
+                                    <p class="card-text">Live in-game pictures of certain events and quests.</p>
+                                    <button (click)="checkUser('gallery')" class="btn btn-primary">Gallery</button>
+                                </div>
                             </div>
                         </div>
-                        <!-- <input type="submit" class="btn btn-block bg-primary" value="Gallery"/> -->
-                    </div>
-                    <div class="col">
-                        <div class="card bg-success shadow-md">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Q&A</h5>
-                                <p class="card-text">A place you can ask questions about the game and gain new knowledge
-                                    on how achieve personal goals within the game.</p>
-                                <button (click)="checkUser('forum')" class="btn btn-primary">Q&A</button>
+                        <div class="col">
+                            <div class="card bg-success shadow-md">
+                                <img src="" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Q&A</h5>
+                                    <p class="card-text">A place you can ask questions about the game and gain new
+                                        knowledge
+                                        on how achieve personal goals within the game.</p>
+                                    <button (click)="checkUser('forum')" class="btn btn-primary">Q&A</button>
+                                </div>
                             </div>
                         </div>
-                        <!-- <input type="submit" class="btn btn-block bg-primary" value="Q&A"/> -->
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     </div>
-</div>
+</body>
