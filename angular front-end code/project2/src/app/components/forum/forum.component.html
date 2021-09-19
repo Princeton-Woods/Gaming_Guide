@@ -1,24 +1,42 @@
-<header class = "grassTop"></header>
+<body class="body2">
+<!-- <header class = "grassTop"></header> -->
+    <br>
+    <form #form="ngForm" (submit)="postForum()">
+        <div class="row p-5">
+            <div class="col">
+                <h3 style="color: white;">{{ username | titlecase }}</h3>
+                <h3 style="color: white">Date: {{ date | date}}</h3>
+                <br>
+                <button input type="submit" class="btn btn-primary">Submit</button>
+            </div>
 
-<h3 for="Username" style="color: black;">{{ username }}</h3>
+            <div class="col">
+                <div class = "d-flex">
+                    <!-- <div class=" column"></div> -->
+                    <div class="card col-md-10">
+                        <h3>Forum</h3>
+                        <p> A place where you can meet and ask questions about minecraft to other gamers. You can post a question and another Minecraft player will answer!!</p>
+                        <textarea name="comment" placeholder="Enter Text Here..." #text="ngModel" [(ngModel)]="forum.text"></textarea>
+                    </div>
+                </div>
+            </div>
+    <!-- <input type="text" id="name" name="name" minlength="4" maxlength="8" size="10" required> -->
 
-<input type="text" id="name" name="name" minlength="4" maxlength="8" size="10" required>
+    <!-- <div class="contentcontainer med left" style="position: absolute; top: 0; right: 0; width: 100px; text-align:right;" ></div> -->
+        </div>
+    </form>
 
-<h3 for="start" style="color: aliceblue;"> Date</h3>
-
-<div class="contentcontainer med left" style="position: absolute; top: 0; right: 0; width: 100px; text-align:right;" ></div>
-
-<input type="date" id="start" name="trip-start" min="2018-01-01" max="2025-12-31">
-
-<body class="bg">
-    <div class = "d-flex justify-content-center">
-        <div class=" column"></div>
-        <div class="card col-md-10">
-            <h3 class = "white">Forum</h3>
-           
-            <p class = "white padding"> A place where you can meet and ask questions about minecraft to other gamers. You can post a question and another Minecraft player will answer!!</p>
-         
-            <textarea name="comment" form="usrform">Enter text here...</textarea>
+    <div class="row p-5" *ngFor="let forum of forums;">
+        <div class="col">
+            <h3 style="color: white;">{{ forum.username | titlecase }}</h3>
+            <h3 style="color: white;">Date Submitted: {{ forum.dateTime | date }}</h3>
+        </div>
+        <div class="col">
+            <div class="d-flex">
+                <div class="card col-md-10">
+                    <p>{{ forum.text }}</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
