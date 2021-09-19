@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
       if(this.users[i].username === data.username && this.users[i].password === data.password){
         alert('Login Successful!');
         localStorage.setItem('credentials', JSON.stringify(data));
-        this.router.navigate(['']);
+        this.router.navigate(['home']);
       }
     }
   }

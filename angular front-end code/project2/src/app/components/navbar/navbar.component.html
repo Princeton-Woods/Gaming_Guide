@@ -6,13 +6,13 @@
             <img id = logo src="assets\Images\MC.png" alt="MC Logo">
           </li>
           <li class="nav-item">
-            <a class="nav-link h5" routerLink="/">Home</a>
+            <a class="nav-link h5" (click)="checkUser('home')" routerLink="home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link h5" routerLink="signup">Signup</a>
           </li>
           <li class="nav-item" *ngIf="!isLoggedIn">
-            <a class="nav-link h5" routerLink="login">Login</a>
+            <a class="nav-link h5" routerLink="/">Login</a>
           </li>
           <li class="nav-item" *ngIf="isLoggedIn">
             <a class="nav-link h5" (click)="logout()" routerLink="login">Logout</a>

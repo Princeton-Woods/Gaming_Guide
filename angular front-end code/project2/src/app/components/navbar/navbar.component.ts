@@ -22,4 +22,12 @@ export class NavbarComponent implements OnInit {
     this.isLoggedIn = false;
     // this.router.navigate(['login']);
   }
+
+  checkUser(page: any){
+    if(this.service.loggedIn()){
+      this.router.navigate([page]);
+    } else {
+      this.router.navigate(['']);
+    }
+  }
 }

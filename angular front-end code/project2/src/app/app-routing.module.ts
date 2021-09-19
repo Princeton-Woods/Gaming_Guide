@@ -11,8 +11,8 @@ import { PotionsComponent } from './components/potions/potions.component';
 import { SignupComponent } from './components/signup/signup.component';
 
 const routes: Routes = [
-  { path: '', component: MainComponent},
-  { path: 'login', component: LoginComponent},
+  { path: '', component: LoginComponent},
+  { path: 'home', component: MainComponent},
   { path: 'signup', component: SignupComponent},
   { path: 'recipes', component: CraftingComponent},
   { path: 'mobs', component: MobsComponent},

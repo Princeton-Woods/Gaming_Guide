@@ -1,74 +1,73 @@
 body {
-    margin: 30px;
-    padding: 0;
-    font-family: sans-serif;
-    /*background-image: url("src\app\components\forum\images\171177.jpg");*/
-    background-repeat: repeat
-    /*background: linear-gradient(to right, #b92b27, #1565c0)*/
+  margin: 30px;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("src\assets\forum\171177.jpg");
+  background-repeat: repeat
+  /*background: linear-gradient(to right, #b92b27, #1565c0)*/
 }
 .dividerView{
-    width:5px;
-    height:2px;
-    display:inline-block;
+  width:5px;
+  height:2px;
+  display:inline-block;
 }
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-    padding: 16px;
-    text-align: center;
-    /*background-image: url("src\app\components\forum\images\533313.jpg");*/
-    height: 375px;
-        grid-row: 2/3;
-    grid-column: 2/3;
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: 1fr 6fr 1fr;
-   
-    
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 16px;
+  text-align: center;
+  background-image: url("src\assets\forum\533313.jpg");
+  height: 375px;
+      grid-row: 2/3;
+  grid-column: 2/3;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+ 
+  
 
-    /*background: linear-gradient(#765338,#64a43a);*/
+  /*background: linear-gradient(#765338,#64a43a);*/
 }
 .card div{
-    grid-row: 2/3;
+  grid-row: 2/3;
+}
+@media (max-width: 768px){
+  .card-holder{
+    grid-template-columns: 1fr 6fr 1fr;
   }
-  @media (max-width: 768px){
-    .card-holder{
-      grid-template-columns: 1fr 6fr 1fr;
-    }
-    .card{
-      padding: 20px;
-    }
+  .card{
+    padding: 20px;
   }
+}
 
 /*Cards css */
 *{
-    box-sizing: border-box;
-    
-  }
+  box-sizing: border-box;
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    
-  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
   
+}
+
+.column {
+  float: left;
+  width: 24.77%;
+  padding: 20px 10px;
+}
+
+.row {margin: 5 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
   .column {
-    float: left;
-    width: 24.77%;
-    padding: 20px 10px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-
-  .row {margin: 5 -5px;}
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-
-  @media screen and (max-width: 800px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
+}
