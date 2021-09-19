@@ -1,10 +1,11 @@
 body {
   font-family: Arial;
   margin: 0;
-  background-image: url('src\assets\gallery\0FhIBn.png');
-}
 
-* {
+  background-image: url('assets/gallery/0FhIBn.png');
+}
+* 
+{
   box-sizing: border-box;
 }
 
