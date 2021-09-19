@@ -8,7 +8,7 @@ export class AuthService {
   constructor() {}
 
   loggedIn(): boolean{
-    if(localStorage.getItem('username') !== null && localStorage.getItem('password') !== null){
+    if(localStorage.getItem('credentials') !== null){
       return true;
     }else{
       return false;
