@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class DataImpl implements RecipesService, MobsService, EnchantmentsService, UserService, WeaponsArmorService, PotionsService, ForumService {
+public class DataImpl implements RecipesService, MobsService, EnchantmentsService, UserService, WeaponsArmorService, PotionsService {
 
 
 
@@ -139,6 +139,7 @@ public class DataImpl implements RecipesService, MobsService, EnchantmentsServic
         potionsRepository.delete(potionsDB);
         return potionsDB;
     }
+<<<<<<< HEAD
 
 
 
@@ -162,4 +163,6 @@ public class DataImpl implements RecipesService, MobsService, EnchantmentsServic
         forumRepository.delete(forumDB);
         return forumDB;
     }
+=======
+>>>>>>> parent of 670b30b (Merge branch 'main' of https://github.com/Princeton-Woods/Project2 into main)
 }

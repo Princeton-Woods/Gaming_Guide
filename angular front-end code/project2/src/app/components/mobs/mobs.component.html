@@ -7,7 +7,7 @@
     </div>
 
     <div class="row row-cols-4 tabcontent">
-        <div class="col text-primary h3 column" *ngFor="let mob of mobs;">
+        <div class="col text-primary h3 column" *ngFor="let mob of mobsFiltered;">
             <div [class]="classCSS" class="p-5 text-center">
                 <h3>{{ mob.name }}</h3>
                 <img src="{{ mob.url }}" alt="Sword Gif" class="imageSizing">

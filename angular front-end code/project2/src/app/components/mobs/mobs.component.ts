@@ -10,8 +10,8 @@ import { DataService } from 'src/app/services/data.service';
 export class MobsComponent implements OnInit {
 
   public mobs: Mob[] = [];
-  // public mobsFiltered: Mob[] = [];
-  public classCSS: string = "cardAll";
+  public mobsFiltered: Mob[] = [];
+  public classCSS: string = "";
 
   constructor(private service: DataService) {}
 
@@ -33,20 +33,19 @@ export class MobsComponent implements OnInit {
     } else {
       this.classCSS = "cardAll";
     }
-    // this.mobsFiltered = [];
-    this.mobs.filter(mob => mob.status === choice);
-    // this.mobs.forEach(mob => { 
-    //   switch(choice){
-    //     case 0:
-    //       this.mobsFiltered.push(mob);
-    //       break;
-    //     default:
-    //       if(mob.status === choice){
-    //         this.mobsFiltered.push(mob);
-    //       }
-    //       break;
-    //   } 
-    // });
+    this.mobsFiltered = [];
+    this.mobs.forEach(mob => { 
+      switch(choice){
+        case 0:
+          this.mobsFiltered.push(mob);
+          break;
+        default:
+          if(mob.status === choice){
+            this.mobsFiltered.push(mob);
+          }
+          break;
+      } 
+    });
   }
   // function openCat(evt, mobName) {
   //   // Declare all variables
