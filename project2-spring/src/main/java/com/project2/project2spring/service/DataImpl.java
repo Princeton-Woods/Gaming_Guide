@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class DataImpl implements RecipesService, MobsService, EnchantmentsService, UserService, WeaponsArmorService, PotionsService {
+public class DataImpl implements RecipesService, MobsService, EnchantmentsService, UserService, WeaponsArmorService, PotionsService, ForumService {
 
 
 
@@ -138,5 +138,28 @@ public class DataImpl implements RecipesService, MobsService, EnchantmentsServic
         Potions potionsDB = potionsRepository.findById(potionId).get();
         potionsRepository.delete(potionsDB);
         return potionsDB;
+    }
+
+
+
+    //Forum Service
+    @Autowired
+    private ForumRepository forumRepository;
+
+    @Override
+    public Forum saveForum(Forum forum) {
+        return (Forum) forumRepository.save(forum);
+    }
+
+    @Override
+    public List<Forum> getAllForum() {
+        return forumRepository.findAll();
+    }
+
+    @Override
+    public Forum deleteForum(Long forumId) {
+        Forum forumDB = (Forum) forumRepository.findById(forumId).get();
+        forumRepository.delete(forumDB);
+        return forumDB;
     }
 }

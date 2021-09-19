@@ -130,4 +130,25 @@ public class DataController {
         return potionsService.deletePotions(potionId);
     }
 
+
+
+    // Forums Controller
+    @Autowired
+    private ForumService forumService;
+
+    @PostMapping("/forums")
+    public Forum saveForum(@RequestBody Forum forum) {
+        return forumService.saveForum(forum);
+    }
+
+    @GetMapping("/forums")
+    public List<Forum> getForums() {
+        return forumService.getAllForum();
+    }
+
+    @DeleteMapping("/forums/{forumId}")
+    public Forum deleteForum(@PathVariable("forumId") long forumId) {
+        return forumService.deleteForum(forumId);
+    }
+
 }
