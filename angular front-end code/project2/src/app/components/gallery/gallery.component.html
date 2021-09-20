@@ -1,114 +1,70 @@
-<body class="body2">
 
+<body class = "body4">
+  <div class = "bodyCar">
+<h1>Gallery</h1>
 
-  <h2 style=" color : #f2f2f2 ">Minecraft Gallery</h2>
-  
-  <div class="container">
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-  
-      <img src="assets/gallery/121124.jpg" style="width:100%">
-  
-  
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-  
-      <img src="assets/gallery/171177.jpg" style="width:100%">
-  
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-      <img src="assets/gallery/533313.jpg" style="width:100%">
-  
-    </div>
-      
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-  
-      <img src="assets/gallery/533315.jpg" style="width:100%">
-  
-  
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-  
-      <img src="assets/gallery/37497.jpg" style="width:100%">
-  
-  
-    </div>
-      
-    <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-  
-      <img src="assets/gallery/533322.jpg" style="width:100%">
-  
-    </div>
-      
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-  
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-  
-    <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="assets/gallery/121124.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods Railroad">
+<p>These are this weeks most spectacular submissions to our gallery.</p>
+
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide Slide1">
+      <div class="carousel__snapper">
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
       </div>
-      <div class="column">
-        <img class="demo cursor" src="assets/gallery/171177.jpg" style="width:100%" onclick="currentSlide(2)" alt="Village">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="assets/gallery/533313.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and creatures">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="assets/gallery/533315.jpg" style="width:100%" onclick="currentSlide(4)" alt="Evil Monsters">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="assets/gallery/37497.jpg" style="width:100%" onclick="currentSlide(5)" alt="Sunrise">
-      </div>    
-      <div class="column">
-        <img class="demo cursor" src="assets/gallery/533322.jpg" style="width:100%" onclick="currentSlide(6)" alt="River">
-      </div>
-    </div>
-    <input type="file" id="myFile" name="filename">
-    <input type="submit">
-  </div>
-  
-  <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-  }
-  </script>
-      
-  </body>
-  
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide Slide2">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide Slide3">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide Slide4">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+</div>
+</body>

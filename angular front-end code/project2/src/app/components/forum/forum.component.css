@@ -1,21 +1,125 @@
-/* body {
-  font-family: Arial, Helvetica, sans-serif;
-  
-} */
 
-/* .column {
+.white{
+
+  color: white;
+  text-shadow:
+  -1px -1px 0 rgb(0, 0, 0),
+  1px -1px 0 rgb(0, 0, 0),
+  -1px 1px 0 rgb(0, 0, 0),
+  1px 1px 0 rgb(0, 0, 0);  
+
+}
+.gray{
+
+  color: rgb(97, 97, 97);
+  text-shadow:
+  -1px -1px 0 rgb(0, 0, 0),
+  1px -1px 0 rgb(0, 0, 0),
+  -1px 1px 0 rgb(0, 0, 0),
+  1px 1px 0 rgb(0, 0, 0);  
+
+}
+.planks{
+  background-image: url(src\assets\Images\Planks.png);
+  background-repeat:repeat;
+}
+.black{
+
+  color: rgb(0, 0, 0);
+  text-shadow:
+  -1px -1px 0 rgb(255, 255, 255),
+
+
+}
+.dividerView{
+  width:5px;
+  height:100px;
+  display:inline-block;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 10px 5px;
+  text-align: center;
+  background-image: url("src\assets\Images\SWood.png");
+  object-fit: fill;
+  width: 600px;
+  height: 15%;
+  /*background: linear-gradient(#765338,#64a43a);*/
+}
+.padding{
+padding: 50px;
+}
+.imageSizing{
+margin-left: auto;
+margin-right: auto;
+  width: 11%;
+  height: 100%;
+}
+.helmetSizing{
+margin-left: auto;
+margin-right: auto;
+width: 14%;
+height: 100%;
+}
+.singleSizing{
+
+/* padding: 15px 25px; */
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 10%;
+height: 100%;
+
+}
+.Text {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+.btn-primary:hover {
+  color: black;
+  background-color: #00b3db;
+  border-color: #285e8e; /*set the color you want here*/
+}
+/*Cards css */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.column {
   float: left;
-  width: 24.77%;
+  width: 50.%;
+}
+.column2 {
+  float: left;
+  width: 35%;
   padding: 20px 10px;
 }
 
-.row {margin: 5 -5px;}
+.row {margin: 5px 35px;}
 
 .row:after {
   content: "";
   display: table;
   clear: both;
-} */
+}
+.TopRight {
+  padding-top: 20px;
+  padding-right: 20px;
+  position:absolute;
+  top:0;
+  right:0;
+}
+.TopLeft {
+  padding-top: 20px;
+  padding-left: 20px;
+  position:absolute;
+  top:0;
+  left:0;
+}
 
 @media screen and (max-width: 800px) {
   .column {
