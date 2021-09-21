@@ -25,10 +25,10 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
   padding: 10px 5px 0px,0px;
   text-align: center;
-  background-image: url("src\assets\Images\Emerald.png");
+  background-image: url("src\assets\Images\EmeraldB.png");
   object-fit: fill;
   width: 800px;
-  height: 400px;
+  height: 425px;
   /*background: linear-gradient(#765338,#64a43a);*/
 }
 .padding{

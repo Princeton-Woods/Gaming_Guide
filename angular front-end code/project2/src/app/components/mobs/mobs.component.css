@@ -21,6 +21,15 @@
   .tab button.active {
     background-color: #ccc;
   }
+
+  .padding{
+    padding: 50px;
+    }
+    
+    .size{
+      font-size: 23px;
+    }
+    
   
   .tabcontent {
     /* display: none; */
@@ -42,7 +51,7 @@
   background-image: url("src\assets\Images\Stone.png");
   background-repeat: repeat;
   width: 350px;
-  height: 590px;
+  height: 650px;
   /*background: linear-gradient(#765338,#64a43a);*/
 }
 .cardPass {
@@ -53,7 +62,7 @@
     background-image: url("src\assets\Images\Birch.png");
     background-repeat: repeat;
     width: 350px;
-    height: 500px;
+    height: 650px;
     /*background: linear-gradient(#765338,#64a43a);*/
 }
 .cardHos {
@@ -64,7 +73,7 @@
     background-image: url("src\assets\Images\RedBrick.png");
     background-repeat: repeat;
     width: 350px;
-    height: 500px;
+    height: 650px;
     /*background: linear-gradient(#765338,#64a43a);*/
 }
 .cardNeut {
@@ -75,7 +84,7 @@
     background-image: url("src\assets\Images\Deepslate.png");
     background-repeat: repeat;
     width: 350px;
-    height: 500px;
+    height: 650px;
     /*background: linear-gradient(#765338,#64a43a);*/
 }
 .imageSizing{

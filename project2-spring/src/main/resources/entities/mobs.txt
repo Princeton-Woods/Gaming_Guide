@@ -39,7 +39,7 @@ Turtle/Turtle.png/2/A turtle is a common passive mob found in beach biomes.4
 Villager/Villager.png/2/Villagers are passive mobs that inhabit villages, work at their professions, breed, and interact. Their outfit varies according to their occupation and biome.4
 Vindicator/Vindicator.png/1/A vindicator is an illager equipped with an iron axe. Vindicators appear in woodland mansions and participate in raids, as well as pillager patrols.4
 Witch/Witch.png/1/A witch is an uncommon hostile mob that uses harmful splash potions as ranged weapons and beneficial positive potions on itself.4
-Wither_Skeleton/Wither.png/1/Wither skeletons are tall variants of skeletons equipped with stone swords found in nether fortresses, which inflict the fatal Wither effect.4
+Wither/Wither.png/1/Wither skeletons are tall variants of skeletons equipped with stone swords found in nether fortresses, which inflict the fatal Wither effect.4
 Wolf/Wolf.png/3/Wolves are neutral mobs that can be tamed.4
 Zombie/Zombie.png/1/Zombies are common undead hostile mobs that deal melee damage and attack in groups.4
 Zombified Piglin/Zpig.png/1/Zombified piglins are undead variants of piglins and piglin brutes that inhabit the Nether. A zombified piglin becomes hostile when it or another nearby zombified piglin is attacked.4

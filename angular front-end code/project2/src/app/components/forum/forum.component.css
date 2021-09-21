@@ -43,11 +43,11 @@
   background-image: url("src\assets\Images\SWood.png");
   object-fit: fill;
   width: 600px;
-  height: 15%;
+  height: 200px;
   /*background: linear-gradient(#765338,#64a43a);*/
 }
 .padding{
-padding: 50px;
+padding-top: 100px;
 }
 .imageSizing{
 margin-left: auto;
